@@ -11,12 +11,41 @@
     <header>
         <a href="#" class="logo">LOGO</a>
         <ul>
-            <li href="#" class="Home">HOME</li>
-            <li href="#" class="About">ABOUT</li>
-            <li href="#" class="Work">WORK</li>
-            <li href="#" class="Contact">CONTACT</li>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li ><a href="#">WORK</a></li>
+            <li ><a href="#">CONTACT</a></li>
         </ul>
     </header>
-    
+  
+    <section>
+        <img src="/img/stars.png" id="start">
+        <img src="/img/moon.png" id="moon">
+        <img src="/img/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon light</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="/img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum atque distinctio suscipit. Distinctio debitis non est fuga amet ullam maxime doloribus porro id quidem corrupti necessitatibus, beatae fugit illum nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor, placeat nesciunt obcaecati veniam id. Aperiam, minus? Quasi saepe nostrum numquam pariatur laborum perspiciatis quae neque ipsa odit, asperiores repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odit, assumenda soluta voluptatem quo ad odio repellendus facilis dolore maxime non quia, perspiciatis commodi, placeat vero mollitia ut nesciunt amet? <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit commodi at quisquam veniam voluptatem, repudiandae accusamus harum maxime quibusdam optio neque ullam id totam voluptates pariatur iusto reiciendis repellendus <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum atque distinctio suscipit. Distinctio debitis non est fuga amet ullam maxime doloribus porro id quidem corrupti necessitatibus, beatae fugit illum nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor, placeat nesciunt obcaecati veniam id. Aperiam, minus? Quasi saepe nostrum numquam pariatur laborum perspiciatis quae neque ipsa odit, asperiores repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odit, assumenda soluta voluptatem quo ad odio repellendus facilis dolore maxime non quia, perspiciatis commodi, placeat vero mollitia ut nesciunt amet? <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit commodi at quisquam veniam voluptatem, repudiandae accusamus harum maxime quibusdam optio neque ullam id totam voluptates pariatur iusto reiciendis repellendus. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum atque distinctio suscipit. Distinctio debitis non est fuga amet ullam maxime doloribus porro id quidem corrupti necessitatibus, beatae fugit illum nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolor, placeat nesciunt obcaecati veniam id. Aperiam, minus? Quasi saepe nostrum numquam pariatur laborum perspiciatis quae neque ipsa odit, asperiores repellendus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima odit, assumenda soluta voluptatem quo ad odio repellendus facilis dolore maxime non quia, perspiciatis commodi, placeat vero mollitia ut nesciunt amet? <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit commodi at quisquam veniam voluptatem, repudiandae accusamus harum maxime quibusdam optio neque ullam id totam voluptates pariatur iusto reiciendis repellendus. ur iusto reiciendis repellendus.</p>
+    </div>
+
+    <script>
+        let starts = document.getElementById('starts') 
+        let moon = document.getElementById('moon') 
+        let mountains_behind = document.getElementById('mountains_behind') 
+        //let mountains_front = document.getElementById('mountains_front') 
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+
+        window.addEventListener('scroll',function() {
+            let value = window.scrollY;
+            stars.Style.left = value + 'px';
+        })
+
+    </script>
+
 </body>
-</html>
+</html>                       
